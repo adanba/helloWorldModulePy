@@ -1,0 +1,3 @@
+$GIT_DIR/hello/*.pyc 
+$GIT_DIR/hello.egg-info/
+$GIT_DIR/hello/hello.egg-info/
