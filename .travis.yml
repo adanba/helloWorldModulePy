@@ -4,4 +4,4 @@ python:
 install:
   - pip install -e .
 script:
-  - python -c "from hello.salutaion import hello;hello();"
+  - python -c "from hello.salutation import hello;hello();"
