@@ -7,7 +7,7 @@ pipeline {
   stages {
      stage('Build') { 
             steps {
-                sh "pip install -e ."
+                sh "pip install --install-dir  /home/danba_abdelhadi/install-dir/  -e ."
             }
         }
   }
