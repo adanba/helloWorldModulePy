@@ -5,10 +5,15 @@ pipeline {
   }
 
   stages {
-    stage("Build") {
-      steps {
-          sh "pip install -e ."
-      }
-    }
+     stage('Build') { 
+            agent {
+                docker {
+                    image 'python:2-alpine' 
+                }
+            }
+            steps {
+                sh "pip install -e ."
+            }
+        }
   }
 }
